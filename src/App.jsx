@@ -26,6 +26,9 @@ function App() {
      * Fix this logic so React knows the state has changed and triggers a re-render.
      * HINT: Look up the "spread operator" (...) to create a copy of the array!
      */
+    setStudents([...students, newStudent ]);
+    alert("Studemy Added!");
+
     const updatedList = students;
     updatedList.push(newStudent);
     alert(`Student ${newStudent.name} added (supposedly)!`);

@@ -22,7 +22,19 @@ function AddStudentForm({ onAdd }) {
 
     // Student Logic goes here...
     
-    console.log("Add button clicked, but logic is missing!");
+
+    const newStudent = {
+      id: Date.now(),
+      name: name,
+      grade: Number(grade) 
+    };
+
+    onAdd(newStudent);
+
+    setName('');
+    setGrade('');
+    
+    console.log("Student added successfully!");
   };
 
   return (
@@ -60,3 +72,4 @@ function AddStudentForm({ onAdd }) {
 }
 
 export default AddStudentForm;
+

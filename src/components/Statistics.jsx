@@ -16,7 +16,7 @@ function Statistics({ students }) {
     } else {
       setAverage(0);
     }
-  }, []); // Missing 'students' dependency! HINT: This array should contain variables that trigger the effect.
+  }, [students]); // Missing 'students' dependency! HINT: This array should contain variables that trigger the effect.
 
   return (
     <div className="card mb-4">
